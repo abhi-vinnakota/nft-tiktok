@@ -43,7 +43,10 @@ async function getOpenseaItems() {
   }
 class Api extends React.Component {
     getOpenseaItems = () => {
-        console.log('click happened');
+      const osContainer = document.getElementById('openseaItems')
+      const newElement = document.createElement('div')
+      newElement.innerHTML = `<h1>HI</h1>`
+      osContainer.appendChild(newElement);
     }
     render() {
         return (
